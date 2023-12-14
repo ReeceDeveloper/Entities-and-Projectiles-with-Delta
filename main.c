@@ -143,14 +143,14 @@ void runSimulation(struct Entity* entityLeft, struct Entity* entityRight) {
 		}
 
 		// Update values.
-		entityLeft->entityPosition = entityLeft->entityPosition + entityLeft->entityVelocity;		// x_f = x_i + v.
-		entityRight->entityPosition = entityRight->entityPosition + entityRight->entityVelocity;	// x_f = x_i + v.
+		entityLeft->entityPosition = entityLeft->entityPosition + entityLeft->entityVelocity;       // x_f = x_i + v.
+		entityRight->entityPosition = entityRight->entityPosition + entityRight->entityVelocity;    // x_f = x_i + v.
 
-		entityLeft->entityVelocity = entityLeft->entityVelocity + entityLeft->entityAcceleration;		// v_f = v_i + a.
-		entityRight->entityVelocity = entityRight->entityVelocity + entityRight->entityAcceleration;	// v_f = v_i + a.
+		entityLeft->entityVelocity = entityLeft->entityVelocity + entityLeft->entityAcceleration;       // v_f = v_i + a.
+		entityRight->entityVelocity = entityRight->entityVelocity + entityRight->entityAcceleration;    // v_f = v_i + a.
 
-		entityLeft->projectilePosition = entityLeft->projectilePosition + entityLeft->projectileVelocity;		// x_f = x_i + v.
-		entityRight->projectilePosition = entityRight->projectilePosition + entityRight->projectileVelocity;	// x_f = x_i + v.
+		entityLeft->projectilePosition = entityLeft->projectilePosition + entityLeft->projectileVelocity;       // x_f = x_i + v.
+		entityRight->projectilePosition = entityRight->projectilePosition + entityRight->projectileVelocity;    // x_f = x_i + v.
 
 		++simulationTime;
 	}
